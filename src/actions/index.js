@@ -1,11 +1,16 @@
-import { FETCH_LIST_SUCCESS } from './types';
+import { FETCH_LIST_SUCCESS, FILTER_LIST} from './types';
 import axios from 'axios';
 
 
 const listFetched = list => ({
     type: FETCH_LIST_SUCCESS,
     list
-  });
+});
+
+export const filterList = (text = '')=> ({
+    type: FILTER_LIST,
+    text
+});
 
 export const fetchList = () => {
     return function(dispatch) {
