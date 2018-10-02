@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { fetchList } from '../actions';
+import { getDetails } from '../actions';
 import { connect } from 'react-redux';
 import { getFilteredList } from '../selectors/getFilteredList';
 import CoastsFilter from './CoastsFilter';
@@ -19,7 +20,8 @@ class Coasts extends Component {
            this.props.list.map(coast => {
              return (
                 <li 
-                  key={coast.ID}>
+                  key={coast.ID}
+                  onClick={() => this.props.getDetails(coast)}>
                   {coast.NameMobileWeb}
                 </li>
              ) 
@@ -37,5 +39,5 @@ const mapStateToProps = state => {
   };
 };
 
-export default  connect(mapStateToProps, { fetchList})(Coasts);
+export default  connect(mapStateToProps, { fetchList, getDetails})(Coasts);
 

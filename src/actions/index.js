@@ -1,4 +1,4 @@
-import { FETCH_LIST_SUCCESS, FILTER_LIST} from './types';
+import { FETCH_LIST_SUCCESS, FILTER_LIST, GET_DETAILS} from './types';
 import axios from 'axios';
 
 
@@ -11,6 +11,12 @@ export const filterList = (text = '')=> ({
     type: FILTER_LIST,
     text
 });
+
+export const getDetails = (coast) => ({
+    type: GET_DETAILS,
+    coast
+ })
+
 
 export const fetchList = () => {
     return function(dispatch) {
