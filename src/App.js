@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Coasts from './components/Coasts';
 import CoastDetails from './components/CoastDetails';
 import  store from "./store";
+import './styles/app.scss'
 import { Provider } from "react-redux";
 import Sidebar from 'react-sidebar';
 
@@ -36,7 +37,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div>
+        <div className="app">
           <Sidebar
             sidebar={ <Coasts /> }
             open={this.state.sidebarOpen}
