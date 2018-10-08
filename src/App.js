@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Coasts from './components/Coasts';
 import CoastDetails from './components/CoastDetails';
 import  store from "./store";
