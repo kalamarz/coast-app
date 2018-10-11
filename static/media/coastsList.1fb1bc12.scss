@@ -1,0 +1,22 @@
+.list {
+    padding-top: 30px;
+    color: #A19FED;
+    width: 400px;
+    background-color: #FFFFFF;
+    @media(max-width: 425px) {
+        width: 300px;
+    }
+
+    &__places {
+        list-style: none;
+    }
+
+    &__place {
+        padding: 8px 0;
+        cursor: pointer;
+        font-weight: 500;
+        &:hover {
+            color: #6d79d6; 
+        }
+    }
+}
