@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CoastsList from './components/CoastsList';
 import CoastDetails from './components/CoastDetails';
+import Header from './components/Header';
 import  store from "./store";
 import './styles/app.scss'
 import { Provider } from "react-redux";
@@ -46,6 +47,7 @@ class App extends Component {
             <button className="toggle-button" onClick={() => this.onSetSidebarOpen(true)}>
               Show list
             </button>
+            <Header />
             <CoastDetails />
           </Sidebar>
         </div>
