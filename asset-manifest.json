@@ -1,12 +1,6 @@
 {
   "main.css": "static/css/main.704d291d.css",
   "main.css.map": "static/css/main.704d291d.css.map",
-  "main.js": "static/js/main.a56cd8a6.js",
-  "main.js.map": "static/js/main.a56cd8a6.js.map",
-  "static\\media\\app.scss": "static/media/app.2a63bec8.scss",
-  "static\\media\\coastDetails.scss": "static/media/coastDetails.7ccc4683.scss",
-  "static\\media\\coastMap.scss": "static/media/coastMap.9575b034.scss",
-  "static\\media\\coastsFilter.scss": "static/media/coastsFilter.db1c9028.scss",
-  "static\\media\\coastsList.scss": "static/media/coastsList.1fb1bc12.scss",
-  "static\\media\\header.scss": "static/media/header.81589281.scss"
+  "main.js": "static/js/main.b0ce3df3.js",
+  "main.js.map": "static/js/main.b0ce3df3.js.map"
 }
