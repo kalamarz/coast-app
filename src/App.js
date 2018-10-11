@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Coasts from './components/Coasts';
+import CoastsList from './components/CoastsList';
 import CoastDetails from './components/CoastDetails';
 import  store from "./store";
 import './styles/app.scss'
 import { Provider } from "react-redux";
 import Sidebar from 'react-sidebar';
 
-const mql = window.matchMedia(`(min-width: 800px)`);
+const mql = window.matchMedia(`(min-width: 900px)`);
 
 class App extends Component {
   constructor(props) {
@@ -37,13 +37,13 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div className="app">
+        <div>
           <Sidebar
-            sidebar={ <Coasts /> }
+            sidebar={ <CoastsList /> }
             open={this.state.sidebarOpen}
             docked={this.state.sidebarDocked}
             onSetOpen={this.onSetSidebarOpen}>
-            <button onClick={() => this.onSetSidebarOpen(true)}>
+            <button className="toggle-button" onClick={() => this.onSetSidebarOpen(true)}>
               Show list
             </button>
             <CoastDetails />
